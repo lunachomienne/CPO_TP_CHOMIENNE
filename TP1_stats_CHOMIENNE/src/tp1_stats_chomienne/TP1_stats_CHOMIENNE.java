@@ -21,7 +21,7 @@ public class TP1_stats_CHOMIENNE {
         int []de= new int[6];
         int m;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Saisissez un nombre entier.");
+        System.out.println("Saisissez un nombre entier.");    // demande de saisie d'un entier
         m = sc.nextInt();
         
         
@@ -56,10 +56,11 @@ public class TP1_stats_CHOMIENNE {
         
         for (int i=0; i<de.length; i++){
             double dpourcentage;
-            dpourcentage=de[i]/m*100;
             
-            System.out.println(dpourcentage);
+            dpourcentage=(de[i]*100)/m;             //affichage en pourcentages
+            
+            System.out.println("face "+(i+1)+" : "+ dpourcentage+"%");
         }
     }
     
-}
+} // on remarque en effectuant le programme que plus m est grand, plus tous les de[i] se ressemblent --> tend vers 1/6
