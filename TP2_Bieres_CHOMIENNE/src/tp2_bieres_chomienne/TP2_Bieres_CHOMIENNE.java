@@ -19,28 +19,32 @@ public class TP2_Bieres_CHOMIENNE {
         BouteilleBiere uneBiere=new BouteilleBiere("Cuvee des trolls", 7.0, "Duboisson");
         
         uneBiere.ouverte=false;
-        uneBiere.lireEtiquette();
+        //uneBiere.lireEtiquette();
 
         BouteilleBiere secondeBiere= new BouteilleBiere("Leffe", 6.6, "Abbaye de Leffe");
         
         secondeBiere.ouverte=false;
-        secondeBiere.lireEtiquette();
+        //secondeBiere.lireEtiquette();
         
         BouteilleBiere troisiemeBiere= new BouteilleBiere("Heineken", 6.0, "La Valentine");
         
         troisiemeBiere.ouverte=false;
-        troisiemeBiere.lireEtiquette();
+        //troisiemeBiere.lireEtiquette();
         
         BouteilleBiere quatriemeBiere= new BouteilleBiere("Desperados", 5.9, "Alken-Maes");
         
-        quatriemeBiere.ouverte=false;
-        quatriemeBiere.lireEtiquette();
+        quatriemeBiere.ouverte=true;
+        //quatriemeBiere.lireEtiquette();
         
         BouteilleBiere cinquiemeBiere= new BouteilleBiere("Kronenbourg", 4.8, "Brasserie Kronenbourg");
         
         cinquiemeBiere.ouverte=false;
-        cinquiemeBiere.lireEtiquette();
+        //cinquiemeBiere.lireEtiquette();
         cinquiemeBiere.Décapsuler();
+        
+        System.out.println(cinquiemeBiere) ;
+        
+        quatriemeBiere.Décapsuler();
         
     }
     
