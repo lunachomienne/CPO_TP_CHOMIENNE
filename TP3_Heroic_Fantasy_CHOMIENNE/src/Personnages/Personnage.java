@@ -16,11 +16,12 @@ public abstract class Personnage {
     String nom;
     int nivVie;
     Arme arme_en_main;
+    int nbperso;
             
      public Personnage(String pseudo, int niv){
         nom=pseudo;
         nivVie=niv;
-        
+        nbperso+=1;
     }
      
     
