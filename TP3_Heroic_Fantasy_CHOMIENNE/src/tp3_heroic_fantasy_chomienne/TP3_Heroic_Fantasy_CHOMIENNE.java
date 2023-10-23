@@ -38,6 +38,17 @@ public class TP3_Heroic_Fantasy_CHOMIENNE {
    
     Guerrier g_Lannister= new Guerrier("Lannister",45, true);
     
+    m_Gandalf.ajouter_arme(e_Or);
+    m_Gandalf.ajouter_arme(b_Chene);
+    m_Gandalf.ajouter_arme(b_Corne);
+    m_Gandalf.equipeArme(b_Chene);
     
+    g_Lannister.ajouter_arme(e_Durandal);
+    g_Lannister.ajouter_arme(e_Excalibur);
+    g_Lannister.ajouter_arme(b_Charme);
+    g_Lannister.equipeArme(e_Excalibur);
+    
+    System.out.println(m_Gandalf);
+    System.out.println(g_Lannister);
     }
 }
