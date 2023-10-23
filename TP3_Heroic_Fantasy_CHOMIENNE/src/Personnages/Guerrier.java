@@ -17,16 +17,18 @@ public class Guerrier extends Personnage{
     String verif;
     ArrayList <Arme> liste_Armes=new ArrayList <Arme>();    
     Arme armeEnMain;
+    int nbguerrier;
     
     public Guerrier(String pseudo, int niv, boolean chev) {
         super(pseudo, niv);
         cheval=chev;
         armeEnMain=null;
+        nbguerrier+=1;
         if (cheval==true){
-            verif=" et est a cheval.";
+            verif=" et est a cheval";
             
         }else{
-            verif=" et est a pied.";
+            verif=" et est a pied";
             
         }
     }
