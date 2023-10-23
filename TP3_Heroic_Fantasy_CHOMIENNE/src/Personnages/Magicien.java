@@ -17,18 +17,19 @@ public class Magicien extends Personnage{
     String verif;
     ArrayList <Arme> liste_Armes=new ArrayList <Arme>();
     Arme armeEnMain;
-    
+    int nbmage;
     
     public Magicien(String pseudo, int niv, boolean conf) {
         super(pseudo, niv);
         confirme=conf;
         armeEnMain=null;
+        nbmage+=1;
         
         if (confirme==true){
-            verif=" et est a cheval.";
+            verif=" et est confirme";
             
         }else{
-            verif=" et est a pied.";
+            verif=" et est novice";
             
         }
     }
