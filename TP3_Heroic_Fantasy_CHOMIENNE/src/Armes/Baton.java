@@ -13,7 +13,7 @@ package Armes;
 
 public class Baton extends Arme {
     
-    int age; 
+    public int age; 
     
     public Baton(String pseudo, int niv, int nb) {
         super(pseudo, niv);
