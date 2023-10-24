@@ -10,7 +10,7 @@ package Armes;
  */
 public class Epee extends Arme{
     
-    int finesse;
+    public int finesse;
     
     public Epee(String pseudo, int niv, int fin) {
         super(pseudo, niv);
