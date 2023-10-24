@@ -5,6 +5,7 @@
 package Personnages;
 
 import Armes.Arme;
+import Armes.Epee;
 import java.util.ArrayList;
 
 /**
@@ -62,6 +63,25 @@ public class Guerrier extends Personnage{
         }else{
             return nom+ "n'a pas cette arme.";
         }
+    }
+    
+    public void finalize(){
+        nbguerrier=nbguerrier-1;
+    
+    }
+    
+    public void attaquer(Personnage victime){
+        int pv=20;
+        if (armeEnMain instanceof Epee){
+            pv=20*((Epee)armeEnMain).finesse;     
+            seFatiguer();
+        }
+        if (cheval==true){
+            pv=pv/2;
+        }
+        victime.estAttaque(pv);
+        System.out.println(victime.nom+ " a ete attaque par "+nom);
+        
     }
     
     
