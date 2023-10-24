@@ -5,6 +5,7 @@
 package Personnages;
 
 import Armes.Arme;
+import Armes.Baton;
 import java.util.ArrayList;
 
 /**
@@ -64,8 +65,25 @@ public class Magicien extends Personnage{
             return nom+ "n'a pas cette arme.";
         }
     }
-
     
+    public void attaquer(Personnage victime){
+        int pv=20;
+        if (armeEnMain instanceof Baton){
+            pv=20*((Baton)armeEnMain).age;   
+            seFatiguer();
+        }
+        if (confirme==true){
+            pv=pv/2;
+        }
+        victime.estAttaque(pv);
+        System.out.println(victime.nom+ " a ete attaque par "+nom);
+        
+    }
+    
+    public void finalize(){
+        nbmage=nbmage-1;
+    }
+   
     @Override
     public String toString () {
         return "Le magicien "+nom+ " a un niveau de vie de "+nivVie+ verif+". Il a l'arme "+armeEnMain;
