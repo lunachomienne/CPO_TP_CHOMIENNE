@@ -116,12 +116,31 @@ public class GrilleDeJeu {
     
      @Override
     public String toString () {
-        ArrayList<Integer> numlignes=new ArrayList<Integer>();
-        ArrayList<Integer> numColonnes=new ArrayList<Integer>();
-        for (int i=0; i
-        return 
-    }
+        String chaine=" |";
+        for (int i=0; i<nbLignes; i++){
+            chaine+=" "+i+" |";
+            
+        }
+        chaine+="\n";
         
-              
+        for (int i=0; i<nbLignes+1; i++){
+            chaine+="----";
+            
+        }
+        chaine+="\n";
+        
+        for (int i=0; i<nbLignes; i++){
+            chaine+=" "+i+" |";
+            for (int j=0; j<nbColonnes; j++){
+                chaine+=" "+matriceCellules[i][j].toString()+" |";
+            }
+            chaine+="\n";
+            for (int k=0; k<nbLignes; k++){
+                chaine+="----"; 
+            }
+            chaine+="\n";
+        }
+        return chaine;            
 
+        }
 }
