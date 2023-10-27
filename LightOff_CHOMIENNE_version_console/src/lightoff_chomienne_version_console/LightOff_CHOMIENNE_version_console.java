@@ -14,7 +14,13 @@ public class LightOff_CHOMIENNE_version_console {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        GrilleDeJeu grille1=new GrilleDeJeu(9,9);
+        Partie partie1=new Partie(grille1);
+        partie1.lancerPartie();
+        
+        
+        
     }
     
 }
