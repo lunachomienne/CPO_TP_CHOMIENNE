@@ -140,6 +140,8 @@ public class GrilleDeJeu {
         return tot;
     }
     
+    
+    
     /**
      *cette fonction s'occupe de formater la matrice de jeu de base en grille, avec des lignes de délimitations et les numeros de lignes et colonnes correspondants.
      * @return elle renvoie la grille de jeu, et s'actualisera après chaque coup.
