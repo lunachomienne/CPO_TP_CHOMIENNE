@@ -15,8 +15,8 @@ public class LightOff_CHOMIENNE_version_console {
      */
     public static void main(String[] args) {
         
-        GrilleDeJeu grille1=new GrilleDeJeu(9,9);
-        Partie partie1=new Partie(grille1);
+        
+        Partie partie1=new Partie();
         partie1.lancerPartie();
         
         
